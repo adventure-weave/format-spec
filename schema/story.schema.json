@@ -8,6 +8,19 @@
             "additionalProperties": {
             },
             "properties": {
+                "contains_any": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
                 "leads_to": {
                     "type": "string"
                 },
