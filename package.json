@@ -1,0 +1,12 @@
+{
+  "name": "adventure-weave-format-spec",
+  "version": "1.0.0",
+  "description": "Specification for common adventure weave format",
+  "main": "src/index.ts",
+  "repository": {
+    "url": "https://github.com/mwozniczak/format-spec.git",
+    "type": "git"
+  },
+  "author": "Michał Woźniczak <michal.wozniczak@gmail.com>",
+  "license": "MIT"
+}
