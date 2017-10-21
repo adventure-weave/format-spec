@@ -8,5 +8,8 @@
     "type": "git"
   },
   "author": "Michał Woźniczak <michal.wozniczak@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript-json-schema": "^0.17.0"
+  }
 }
