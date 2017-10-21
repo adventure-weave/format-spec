@@ -2,6 +2,7 @@ interface ChoiceSpec {
     name: string
     leads_to: string
     [propName: string]: any
+    contains_any?: string | string[]
 }
 
 interface NodeSpec {
