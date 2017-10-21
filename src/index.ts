@@ -8,11 +8,11 @@ interface NodeSpec {
     title?: string
     content: string
     is_start?: boolean
-    input: "pick" | "type"
+    input?: "pick" | "type"
     choices: ChoiceSpec[]
     [propName: string]: any
 }
 
-interface Story {
+interface StorySpec {
     [node_id: string]: NodeSpec
 }

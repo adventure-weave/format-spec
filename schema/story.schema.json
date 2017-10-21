@@ -1,0 +1,52 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": {
+        "$ref": "#/definitions/NodeSpec"
+    },
+    "definitions": {
+        "ChoiceSpec": {
+            "additionalProperties": {
+            },
+            "properties": {
+                "leads_to": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "NodeSpec": {
+            "additionalProperties": {
+            },
+            "properties": {
+                "choices": {
+                    "items": {
+                        "$ref": "#/definitions/ChoiceSpec"
+                    },
+                    "type": "array"
+                },
+                "content": {
+                    "type": "string"
+                },
+                "input": {
+                    "enum": [
+                        "pick",
+                        "type"
+                    ],
+                    "type": "string"
+                },
+                "is_start": {
+                    "type": "boolean"
+                },
+                "title": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "type": "object"
+}
+
